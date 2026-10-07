@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rubik's Cube 3D</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <p class="eyebrow">CUBE 3×3 réaliser par Fallou LO</p>
+    <h1>Rubik's Cube</h1>
+    <p class="subtitle">Glisse une pastille pour tourner une face.</p>
+
+    <div id="stage">
+      <div id="pivot">
+        <div id="cube"></div>
+      </div>
+    </div>
+     <p>Mouvements : <strong id="moves">0</strong></p>
+    <div class="controls">
+      <button id="scrambleBtn">Mélanger</button>
+      <button id="undoBtn">Annuler</button>
+      <button id="resetBtn" >Réinitialiser</button>
+    </div>
+  </main>
+<dialog id="confirmModal">
+  <p id="confirmText"></p>
+  <div class="modal-actions">
+    <button id="confirmYes">Confirmer</button>
+    <button id="confirmNo" class="secondary">Annuler</button>
+  </div>
+</dialog>
+  <script src="cube.js"></script>
+</html>
